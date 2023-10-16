@@ -1,0 +1,71 @@
+/* Resetear estilos por defecto */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Courier New', monospace;
+}
+
+/* Estilo del cuerpo */
+body {
+    background-color: #fefcf8;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* Estilo del título */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del pie de página */
+#total-general {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo del contenedor de notas */
+.notas {
+    background-color: #fefcf8;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo de la imagen */
+img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Estilo de la tabla de productos */
+tr:nth-child(even) {
+    background-color: #f3dbbf;
+}
+
+tr:nth-child(odd) {
+    background-color: #e2cdb2;
+}

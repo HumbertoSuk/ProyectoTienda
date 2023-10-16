@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee & Dreams - Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <script src="scriptMain.js"></script>
+            <img src="logo.png" alt="Coffee & Dreams Logo">
+            <h2 id="username-display"></h2>
+            <h2>Coffee & Dreams (๑>◡<๑)</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Inicio</a></li>
+                <li id="catalog-link"><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="acerca_de.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container-form">
+            <h1>Formulario de Producto</h1>
+            <form id="agregarProductoForm">
+                <div class="mb-3">
+                    <label for="nuevoId">ID</label>
+                    <input type="text" class="form-control" id="nuevoId" name="id" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nuevoNombre">Nombre (Descripción)</label>
+                    <input type="text" class="form-control" id="nuevoNombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nuevaImagen">URL de la Imagen</label>
+                    <input type="text" class="form-control" id="nuevaImagen" name="imagen" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nuevoPrecio">Precio</label>
+                    <input type="number" class="form-control" id="nuevoPrecio" name="precio" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
+            </form>
+        </div>
+        
+    
+
+        <div class="container">
+            <h1>Catálogo de Productos</h1>
+
+            <!-- Tabla para mostrar la lista de productos -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre (Descripción)</th>
+                        <th>Imagen</th>
+                        <th>Precio</th>
+                        <th>Acciones</th> <!-- Nueva columna para el botón de eliminación -->
+                    </tr>
+                </thead>
+                <tbody id="tablaProductos">
+                    <!-- Aquí se llenarán los productos desde JavaScript -->
+                    <td>
+                        <button class="btn btn-danger eliminar-producto" data-id="${producto.id}">Eliminar</button>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div class="calculator-button" id="toggle-calculator">Calculadora</div>
+        
+        <div class="calculator-container">
+            <div class="calculator">
+                <input type="text" id="display" value="0" readonly>
+                <div class="buttons">
+                    <button class="operator" value="+">+</button>
+                    <button class="operator" value="-">-</button>
+                    <button class="operator" value="*">*</button>
+                    <button class="operator" value="/">/</button>
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="0">0</button>
+                    <button value="." class="decimal">.</button>
+                    <button id="clear" class="clear">C</button>
+                    <button id="calculate" class="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="catalogo.js"></script>
+    <script src="scriptCatalogo.js"></script>
+    <script src="scriptCalculadora.js"></script>
+</body>
+</html>

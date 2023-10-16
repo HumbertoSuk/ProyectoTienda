@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee & Dreams - Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <script src="scriptMain.js"></script>
+            <img src="logo.png" alt="Coffee & Dreams Logo">
+            <h2 id="username-display"></h2>
+            <h2>Coffee & Dreams (๑>◡<๑)</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Inicio</a></li>
+                <li id="catalog-link"><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="acerca_de.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+
+        <div class="calculator-button" id="toggle-calculator">Calculadora</div>
+        
+        <div class="calculator-container">
+            <div class="calculator">
+                <input type="text" id="display" value="0" readonly>
+                <div class="buttons">
+                    <button class="operator" value="+">+</button>
+                    <button class="operator" value="-">-</button>
+                    <button class="operator" value="*">*</button>
+                    <button class="operator" value="/">/</button>
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="0">0</button>
+                    <button value="." class="decimal">.</button>
+                    <button id="clear" class="clear">C</button>
+                    <button id="calculate" class="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="scriptCalculadora.js"></script>
+</body>
+</html>
