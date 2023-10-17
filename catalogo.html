@@ -66,12 +66,34 @@
                 <tbody id="tablaProductos">
                     <!-- Aquí se llenarán los productos desde JavaScript -->
                     <td>
-                        <button class="btn btn-danger eliminar-producto" data-id="${producto.id}">Eliminar</button>
+
                     </td>
                 </tbody>
             </table>
         </div>
-    
+
+        <div class="overlay"></div>
+
+            <div class="modal" id="formularioEdicion">
+                <span class="close-button"></span>
+                <h1>Editar Producto</h1>
+                <form id="editarProductoForm">
+                    <input type="hidden" id="editarId">
+                    <div class="mb-3">
+                        <label for="editarNombre">Nombre (Descripción)</label>
+                        <input type="text" class="form-control" id="editarNombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editarImagen">URL de la Imagen</label>
+                        <input type="text" class="form-control" id="editarImagen" name="imagen" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editarPrecio">Precio</label>
+                        <input type="number" class="form-control" id="editarPrecio" name="precio" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </form>
+            </div>
 
 
 
